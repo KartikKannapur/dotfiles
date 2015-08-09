@@ -32,9 +32,9 @@ set bs=2
 " Enable spellchecking for Markdown
 autocmd FileType markdown setlocal spell
 
-" Autocomplete with dictionary words when spell check is on
+" Auto-complete with dictionary words when spell check is on
 set complete+=kspell
-
+set spell
 
 set number       "Line numbers in the editor
 set showcmd      "Show incomplete cmds down the bottom
@@ -47,6 +47,7 @@ set smartcase     " ignore case if search pattern is all lowercase,
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 
+set cursorline
 
 " ================ Indentation ======================
 
@@ -57,6 +58,13 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
+
+
+" ================ Status Line - Information ======================
+
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [POS=%04l,%04v]\ [%p%%]\ [LINES=%L]
+
+set laststatus=2
 
 " ==================== VUNDLE  ====================
 
