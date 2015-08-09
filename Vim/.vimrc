@@ -49,6 +49,11 @@ set incsearch     " show search matches as you type
 
 set cursorline
 
+set autoread        "Set autoread when a file is changed from the outside
+set encoding=utf8
+
+set laststatus=2
+
 " ================ Indentation ======================
 
 set autoindent
@@ -59,12 +64,6 @@ set softtabstop=4
 set tabstop=4
 set expandtab
 
-
-" ================ Status Line - Information ======================
-
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [POS=%04l,%04v]\ [%p%%]\ [LINES=%L]
-
-set laststatus=2
 
 " ==================== VUNDLE  ====================
 
@@ -84,9 +83,19 @@ set sidescroll=1
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tomasr/molokai'
 Plugin 'hallison/vim-markdown'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+
+let g:airline#extensions#tabline#enabled = 1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+
+" ================ MAPPING  ======================
+
+
+" ==================== EDITOR THEME ====================
 
 " Enabling Molokai Theme 
 syntax enable
