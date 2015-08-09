@@ -20,15 +20,27 @@ set clipboard=unnamed
 
 " Using the Mouse Cursor
 set mouse=a
+set history=100
+set ruler         " show the cursor position all the time
 
 " Make Backspace behave normally
 set bs=2
+
+
+" Enable spellchecking for Markdown
+autocmd FileType markdown setlocal spell
+
+" Autocomplete with dictionary words when spell check is on
+set complete+=kspell
+
+" ==================== VUNDLE  ====================
 
 " Set the Runtime Path to include Vundle and Initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" PLUGINS:
+
+" ==================== PLUGINS ====================
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
