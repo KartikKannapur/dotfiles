@@ -25,3 +25,9 @@
 20. Copy File Name
 21. CSV
 22. Cypher
+
+
+SublimeGit
+SublimeLinter
+SublimeREPL
+SublimeCodeIntel
