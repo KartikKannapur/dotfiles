@@ -16,3 +16,12 @@
 11. Apache Pig
 12. AutoPEP8
 13. C Improved
+14. C++ 11 Snippets
+15. C++ 11 Starting Kit
+16. Change Tracker
+17. Cheater
+18. Codec
+19. Crypto
+20. Copy File Name
+21. CSV
+22. Cypher
