@@ -25,6 +25,9 @@
 20. Copy File Name
 21. CSV
 22. Cypher
+23. d3.js Snippets
+24. Display Functions (Java)
+25. Flask Completions
 
 
 SublimeGit
